@@ -8,6 +8,7 @@ class BuiltAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      
       // ignore: deprecated_member_use
       title: appBarTitle(),
       actions: appBarActions,
