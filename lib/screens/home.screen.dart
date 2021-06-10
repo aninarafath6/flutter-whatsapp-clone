@@ -10,15 +10,8 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
+        child: BuiltAppBar(),
         preferredSize: Size.fromHeight(100),
-        child: Theme(
-          data: ThemeData(
-            primaryColor: Colors.teal[800],
-            highlightColor: Colors.transparent,
-            splashColor: Colors.transparent,
-          ),
-          child: BuiltAppBar(),
-        ),
       ),
     );
   }
