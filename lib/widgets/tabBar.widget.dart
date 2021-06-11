@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
-TabBar builtTabBar() {
+TabBar builtTabBar(_tabController) {
   return TabBar(
     indicatorColor: Colors.white,
     indicatorWeight: 3,
+    controller: _tabController,
     tabs: [
       Container(
         child: Icon(Icons.camera_alt),

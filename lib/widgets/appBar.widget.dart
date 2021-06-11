@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:watsapp_clone/widgets/tabBar.widget.dart';
 
 class BuiltAppBar extends StatelessWidget implements PreferredSizeWidget {
+  final TabController controller;
+  BuiltAppBar({required this.controller});
   @override
   Size get preferredSize => const Size.fromHeight(100);
   @override
@@ -12,7 +14,7 @@ class BuiltAppBar extends StatelessWidget implements PreferredSizeWidget {
       // ignore: deprecated_member_use
       title: appBarTitle(),
       actions: appBarActions,
-      bottom: builtTabBar(),
+      bottom: builtTabBar(controller),
     );
   }
 
