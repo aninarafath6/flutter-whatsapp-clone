@@ -78,6 +78,8 @@ class ChatCard extends StatelessWidget {
                               ? Icons.image_rounded
                               : messageType == LastMesssageType.Voice
                                   ? Icons.keyboard_voice
+                                   : messageType == LastMesssageType.Sticker
+                                  ? Icons.file_copy_rounded
                                   : Icons.ac_unit,
                           color: Colors.grey,
                           size: 20,

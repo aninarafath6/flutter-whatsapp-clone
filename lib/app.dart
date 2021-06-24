@@ -6,8 +6,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         theme: ThemeData(
-          primaryColor: Colors.teal[800],
-        ),
+            primaryColor: Colors.teal[800],
+            appBarTheme: AppBarTheme(brightness: Brightness.light)),
         debugShowCheckedModeBanner: false,
         title: 'WhatsApp clone',
         home: DefaultTabController(
